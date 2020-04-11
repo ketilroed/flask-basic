@@ -6,3 +6,7 @@ from app import app
 def index():
     user = {'username':'Ketil'}
     return render_template('index.html', title='Home', user=user)
+
+@app.route('/test')
+def test():
+    return "Heisann!"
